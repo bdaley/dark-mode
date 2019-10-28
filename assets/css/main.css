@@ -20,9 +20,23 @@
 	--gradient-end: 	rgba(0, 228, 255, 0.35);
 }
 
-/** Add your dark-mode variables here **/
+/** Add your dark-mode properties here **/
 body.dark-mode {
-	--bg-color: black;
+
+
+}
+
+
+
+
+
+
+/** Dark Mode Toggle text **/
+a#dark-mode::after {
+	content: " (off)";
+}
+body.dark-mode a#dark-mode::after {
+	content: " (on)";
 }
 
 /* Icon (alt) */
